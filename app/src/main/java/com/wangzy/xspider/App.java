@@ -9,6 +9,8 @@ import com.parse.Parse;
  */
 public class App extends Application {
 
+    public static String tag="fl";
+
     @Override
     public void onCreate() {
         super.onCreate();

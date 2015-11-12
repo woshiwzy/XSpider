@@ -1,13 +1,11 @@
 package com.common.util;
 
-import android.view.View;
-import android.widget.ListView;
-
 import java.util.ArrayList;
+import java.util.List;
 
 public class ListUtiles {
 
-	public static boolean isEmpty(ArrayList list) {
+	public static boolean isEmpty(List list) {
 		if (null == list || list.isEmpty()) {
 			return true;
 		}
