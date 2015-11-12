@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Model</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="notification">Notification</string>
+
+    <!-- 下拉列表 -->
+    <string name="xlistview_header_hint_normal">pull to refresh</string>
+    <string name="xlistview_header_hint_ready">realse to refresh</string>
+    <string name="xlistview_header_hint_loading">loading...</string>
+    <string name="xlistview_header_last_time">last update time：</string>
+    <string name="xlistview_footer_hint_normal">click load more...</string>
+    <string name="xlistview_footer_hint_ready">click load more...</string>
+    <string name="title_activity_regist">RegistActivity</string>
+    <string name="itemdeleted">Item deleted</string>
+    <string name="taptoundo">Tap to undo</string>
+
+    <string name="pull_to_refresh_pull_label">pull to refresh</string>
+    <string name="pull_to_refresh_release_label">realse to refresh</string>
+    <string name="pull_to_refresh_refreshing_label">refresh...</string>
+    <string name="pull_to_refresh_footer_release_label">realse to load</string>
+    <string name="pull_to_refresh_footer_pull_label">load more</string>
+    <string name="pull_to_refresh_footer_refreshing_label">loading\u2026</string>
+
+
+    <string name="general.ago">"ago"</string>
+    <string name="general.momentAgo">"a moment"</string>
+    <string name="general.second">"sec"</string>
+    <string name="general.seconds">"secs"</string>
+    <string name="general.minute">"min"</string>
+    <string name="general.minutes">"mins"</string>
+    <string name="general.hour">"hour"</string>
+    <string name="general.hours">"hours"</string>
+    <string name="general.day">"day"</string>
+    <string name="general.days">"days"</string>
+    <string name="general.timeAgo_">"%1$s ago"</string>
+
+
+</resources>

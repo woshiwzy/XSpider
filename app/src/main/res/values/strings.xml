@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">福利浏览器</string>
+    <string name="menu_setting">设置</string>
+    <string name="menu_setting_download">已经下载</string>
+
+
+
+    <string name="dialog_input_title">请输入资源类型</string>
+    <string name="dialog_input_msg">请输入后缀名</string>
+    <string name="dialog_input_error">不能为空</string>
+
+    <string name="setting_title">设置自动抓去的资源类型</string>
+    <string name="download_list_title">已经下载的资源</string>
+
+</resources>
