@@ -10,6 +10,7 @@ import android.webkit.WebViewClient;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
+import com.common.util.StringUtils;
 import com.wangzy.xspider.BaseSlideActivity;
 import com.wangzy.xspider.R;
 
@@ -35,6 +36,7 @@ public class MainActivity extends BaseSlideActivity {
     @InjectView(R.id.imageButtonNext)
     ImageButton imageButtonNext;
 
+    private String stringUrlHome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,10 +80,26 @@ public class MainActivity extends BaseSlideActivity {
 
     }
 
+    @OnClick(R.id.imageButtonRefresh)
+    public void onRefreshClick() {
+        if (!StringUtils.isEmpty((webView.getUrl()))) {
+            webView.loadUrl(webView.getUrl());
+        }
+    }
+
     @OnClick(R.id.imageButtonNext)
     public void onNextClick() {
         if (webView.canGoForward()) {
             webView.goForward();
+        }
+    }
+
+
+    @OnClick(R.id.imageButtonHome)
+    public void onHomeClick() {
+
+        if (!StringUtils.isEmpty(stringUrlHome)) {
+            webView.loadUrl(stringUrlHome);
         }
     }
 
@@ -90,9 +108,23 @@ public class MainActivity extends BaseSlideActivity {
         getSlidingMenu().toggle();
     }
 
+    @OnClick(R.id.imageButtonDown)
+    public void onDownloadClick() {
+
+    }
+
     @OnClick(R.id.buttonGo)
     public void onClickGo() {
-        webView.loadUrl(editText.getText().toString());
+        String url = getInput(editText);
+        if (!StringUtils.isEmpty(url)) {
+            this.stringUrlHome = url;
+            if (url.startsWith("http")) {
+                webView.loadUrl(editText.getText().toString());
+            } else {
+                webView.loadUrl("http://" + editText.getText().toString());
+            }
+
+        }
     }
 
 
